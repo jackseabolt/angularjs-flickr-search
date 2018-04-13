@@ -1,0 +1,38 @@
+body {
+    text-align: center; 
+    font-family: arial; 
+    padding: 100px; 
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+}
+
+input {
+    padding: 10px 15px; 
+    border: 0px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+button {
+    padding: 10px 15px; 
+    border: 0px; 
+    border-radius: 5px; 
+    font-size: 16px;
+    color: white; 
+    background-color: rgb(115, 115, 136); 
+}
+
+.results {
+    margin-top: 50px; 
+}
+
+.result-title {
+    margin-bottom: 50px; 
+}
+
+.container {
+    height: 200px;
+    width: 25%;  
+    overflow: hidden;
+    display: inline-block;  
+}
