@@ -16,7 +16,7 @@
                 <h3 class="result-title" >Results with tag of {{ value }}</h3>
                 <div class="container" ng-repeat="result in results">
                     
-                        <img ng-src="{{ trustSrc('https://farm' + result.farm  + '.staticflickr.com/' + result.server + '/' + result.id + '_' + result.secret + '.jpg') }}" />
+                        <img class="image" ng-src="{{ trustSrc('https://farm' + result.farm  + '.staticflickr.com/' + result.server + '/' + result.id + '_' + result.secret + '.jpg') }}" />
                 </div>
             </div>
         </div>
