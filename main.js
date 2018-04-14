@@ -1,5 +1,11 @@
 angular.module('myApp', [])
 .controller('myCtrl', function($http, $scope, $sce) {
+    $scope.store = {
+        photo: null
+    }
+    $scope.activatePhoto = function(photo) {
+        $scope.store.photo = photo; 
+    }
     $scope.trustSrc = function(src) {
         return $sce.trustAsResourceUrl(src); 
     }

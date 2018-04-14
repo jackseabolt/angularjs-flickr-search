@@ -6,28 +6,72 @@ body {
     color: white; 
 }
 
-.image {
+.photo-background {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%; 
+    width: 100%; 
+    margin: 0px; 
+    z-index: 20; 
+    top: 0px; 
+    bottom: 0px; 
+    left: 0px; 
+    right: 0px; 
+    position: fixed;
+    align-items: center; 
+    display: flex; 
+    justify-content: center;
+}
+
+.fa-times {
+    float: right; 
+    position: relative; 
+    left: -40px; 
+    top: 20px; 
     cursor: pointer; 
 }
 
-.image:hover {
+.fa-times {
     opacity: 0.7; 
 }
 
+.image {
+    cursor: pointer;
+    transition: 0.3s 
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 45px; 
+}
+
+.image:hover {
+    opacity: 0.5; 
+}
+
 input {
-    padding: 10px 15px; 
+    padding: 9.5px 15px; 
     border: 0px; 
-    border-radius: 5px; 
+    border-radius: 5px 0px 0px 5px; 
     font-size: 16px; 
+    margin: 0px; 
 }
 
 button {
-    padding: 10px 15px; 
+    padding: 9px 15px 10.5px 15px; 
+    position: relative; 
+    top: -0.5px; 
     border: 0px; 
-    border-radius: 5px; 
+    border-radius: 0px 5px 5px 0px; 
     font-size: 16px;
-    color: white; 
-    background-color: rgb(115, 115, 136); 
+    color: white;
+    margin: 0px;  
+    background-color: rgb(75, 75, 102); 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+button:hover {
+    background-color: rgb(63, 63, 78)
 }
 
 .results {
@@ -36,6 +80,8 @@ button {
 
 .result-title {
     margin-bottom: 50px; 
+    font-size: 18px; 
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
