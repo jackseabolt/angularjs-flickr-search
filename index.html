@@ -15,7 +15,7 @@
                 <input type="text" ng-model="value" placeholder="Search" /><button type="submit"><i class="fas fa-search"></i></button>
             </form>
             <div class="results" ng-if="results">
-                <h4 class="result-title" >Results with tag of {{ value }}</h4>
+                <h4 class="result-title" >Results with tag of {{ store.searchTerm }}</h4>
                 <div class="container" ng-repeat="result in results">
                     <img class="image" ng-click="activatePhoto(result)" ng-src="{{ trustSrc('https://farm' + result.farm  + '.staticflickr.com/' + result.server + '/' + result.id + '_' + result.secret + '.jpg') }}" />
                 </div>

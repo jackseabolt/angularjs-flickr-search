@@ -1,7 +1,8 @@
 angular.module('myApp', [])
 .controller('myCtrl', function($http, $scope, $sce) {
     $scope.store = {
-        photo: null
+        photo: null, 
+        searchTerm: null
     }
     $scope.activatePhoto = function(photo) {
         $scope.store.photo = photo; 
@@ -10,8 +11,7 @@ angular.module('myApp', [])
         return $sce.trustAsResourceUrl(src); 
     }
     $scope.submit = function() {
-        console.log("IT FIRED")
-        console.log($scope.value)
+        $scope.store.searchTerm = $scope.value; 
         var params = {
             method: 'flickr.photos.search',
             api_key: '793a4e6f97235f8a40e83d53e2728365',
